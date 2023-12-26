@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Space Ship Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-image: url('space.jpg');">
+  <div class="container">
+    <h1>Space Ship</h1>
+    <button id="easyButton">Easy game</button>
+    <button id="hardButton">Hard game</button>
+    <button id="shipButton">Ship</button>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <div id="gameElements">
+      <div id="score" style="display: none;">Score: <span id="scoreValue">0</span></div>
+      <div id="lives" class="heart-container"> 
+        <img src="heart.png" class="heart-icon" alt="Heart">
+        <img src="heart.png" class="heart-icon" alt="Heart">
+        <img src="heart.png" class="heart-icon" alt="Heart">
+      </div>
+      <button id="menuButton" style="display: none;">Меню</button>
+    </div>
+  </div>
+  <div id="shipSelection" style="display: none;">
+    <h2 style="text-align: center;">Оберіть корабель</h2>
+    <div class="ship-slider">
+      <div id="shipOptions" class="ship-options"></div>
+    </div>
+    <button id="backToMenu">Назад в меню</button>
+  </div>
+  <script src="app.js"></script>
+</body> 
+</html>

@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: 'space.jpg' ;/* Встановлення картинки фону */
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 36px;
+    color: antiquewhite;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  #gameCanvas {
+    display: none;
+    border: 1px solid white;
+    margin-top: 20px;
+  }
+  
+  #score {
+    display: none;
+    font-size: 24px;
+    margin-top: 20px;
+    color:blanchedalmond;
+  }
+  #coins {
+    position: absolute;
+    top: 40px;
+    right: 250px;
+    color:blanchedalmond;
+    display: none; /* Initially hidden */
+  }
+  #shipSelection{
+    color:blanchedalmond;
+  }
+  /* #score {
+  position: absolute;
+  top: 40px;
+  right: 480px;
+  display: none;
+  font-size: 24px;
+  color: blanchedalmond;
+} */
+  button#menuButton {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+  }
+
+  .selected {
+    background-color: green;
+    color: white;
+  }
+  
+  /* Приклад стилю для обраного корабля */
+  .spaceShipSelected {
+    border: 2px solid green;
+  }
+
+  .ship-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: auto;
+    max-width: 100%; /* робить слайдер на всю ширину доступну */
+    padding: 10px 0;
+  }
+  
+  .ship-options {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .ship-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .ship-image {
+    width: 150px; /* або будь-яка потрібна вам ширина */
+    height: auto; /* зберігає співвідношення сторін */
+  }
+  
+  .selectShipButton {
+    margin-top: 20px; /* відступ між зображенням і кнопкою */
+  }
+  #lives {
+    position: absolute;
+    top: 40px;
+    left: 250px;
+    display: none; /* Initially hidden */
+  }
+  
+  .heart-icon {
+    width: 30px; /* Set the width of the hearts */
+    height: auto; /* Automatically adjust height */
+  }
+
+  /* #coinsValue {
+    position: absolute;
+    top: 40px;
+    right: 250px;
+    display: none; 
+    font-size: 20px;
+
+  } */
+  /* button.restart-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #f41212;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  } */
+  
+
+  /* .spaceship {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  } */
+
+  /* .bullet {
+    width: 3px;
+    height: 6px;
+    background-color: red;
+    position: absolute;
+    display: none;
+  }
+
+  .comet {
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    position: absolute;
+    display: block;
+  }
+
+  .asteroid {
+    width: 40px;
+    height: 40px;
+    background-color: orange;
+    position: absolute;
+    display: block;
+  } */
